@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5755DE2228221B9E004F3DBA /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755DE2128221B9E004F3DBA /* BoardView.swift */; };
 		57D64B342818F3AC0099E696 /* match_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D64B332818F3AC0099E696 /* match_3App.swift */; };
 		57D64B362818F3AC0099E696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D64B352818F3AC0099E696 /* ContentView.swift */; };
 		57D64B382818F3B50099E696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D64B372818F3B50099E696 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5755DE2128221B9E004F3DBA /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		57D64B302818F3AC0099E696 /* match 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "match 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D64B332818F3AC0099E696 /* match_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = match_3App.swift; sourceTree = "<group>"; };
 		57D64B352818F3AC0099E696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,7 +44,6 @@
 		57D64B272818F3AC0099E696 = {
 			isa = PBXGroup;
 			children = (
-				57D64B492818F66A0099E696 /* game_variable.swift */,
 				57D64B322818F3AC0099E696 /* match 3 */,
 				57D64B312818F3AC0099E696 /* Products */,
 			);
@@ -63,6 +64,8 @@
 				57D64B462818F42B0099E696 /* TimerView.swift */,
 				57D64B332818F3AC0099E696 /* match_3App.swift */,
 				57D64B352818F3AC0099E696 /* ContentView.swift */,
+				57D64B492818F66A0099E696 /* game_variable.swift */,
+				5755DE2128221B9E004F3DBA /* BoardView.swift */,
 				57D64B372818F3B50099E696 /* Assets.xcassets */,
 				57D64B3C2818F3B50099E696 /* Info.plist */,
 				57D64B392818F3B50099E696 /* Preview Content */,
@@ -150,6 +153,7 @@
 				57D64B362818F3AC0099E696 /* ContentView.swift in Sources */,
 				57D64B342818F3AC0099E696 /* match_3App.swift in Sources */,
 				57D64B472818F42C0099E696 /* TimerView.swift in Sources */,
+				5755DE2228221B9E004F3DBA /* BoardView.swift in Sources */,
 				57D64B4A2818F66A0099E696 /* game_variable.swift in Sources */,
 				57D64B442818F3CC0099E696 /* GameTimer.swift in Sources */,
 			);
