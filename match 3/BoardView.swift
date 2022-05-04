@@ -4,13 +4,15 @@ struct BoardView: View {
     @StateObject var game=game_variable()
     @State private var startDetectDrag = false
     @State private var number = 1
-    var dragGesture: some Gesture {
+    func dragGesture(x:Int,y:Int,game:game_variable)->some Gesture {
         DragGesture(minimumDistance: 0)
             .onChanged({ value in
             if startDetectDrag {
             if value.translation.width > 5 {
             number += 1
-                print(value.translation.width)
+                withAnimation(){
+                    
+                }
             startDetectDrag = false
 
             } else if value.translation.width < -5 {
