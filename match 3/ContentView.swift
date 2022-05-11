@@ -17,7 +17,7 @@ struct ContentView: View {
                 BoardView(highest: $highest)
             }.background( Image("Wordle_background").scaledToFill())
         }else{
-            OverView(time_out: $gameTimer.time_out, highest: highest)
+            OverView(time_out: $gameTimer.time_out, highest: highest).background(Rectangle().fill(.black).scaledToFill())
         }
                 
     }

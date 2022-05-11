@@ -169,19 +169,23 @@ struct BoardView: View {
                     //random
                     Button(action: {game.random_assign()
                     }, label: {
-                        Text("random").background(Rectangle().stroke())
+                        Text("random").foregroundColor(.black).background(Rectangle().fill(.white))
                     })
                         .padding(.trailing, 100.0)
                     
                     VStack(alignment: .leading){
-                        Text("Score").background(Rectangle().stroke())
-                        Text("\(game.score)").background(Rectangle().stroke().frame(width: 80, height: 20))
+                        Text("Score").background(Rectangle().fill(.white))
+                        Text("\(game.score)").background(Rectangle().fill(.white))
                     }
                     .padding(.leading, 100.0)
                 }
                 LazyVGrid(columns: columns) {
                     ForEach(Array(game.board.enumerated()),id:\.element.id){index,tile in
                         Image("\(tile.img_id)").gesture(dragGesture(index:index,game:game))
+                            .onChange(of: game.score, perform: {value in
+                                      if highest < game.score{
+                                highest=game.score
+                                      }})
                     }
                     
                     

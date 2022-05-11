@@ -18,7 +18,7 @@ class GameTimer: ObservableObject {
                 }
                 if let self = self,self.secondsElapsed < 0{
                     self.secondsElapsed=0
-                    
+                    self.time_out=true
                 }
             }
         

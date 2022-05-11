@@ -97,7 +97,19 @@ class game_variable: ObservableObject{
             }
         }
         if board[i].img_id>0{
-            fall_col[i%8]-=1
+            now = i-8
+            var filled=true
+            while now >= 0{
+                if board[now].img_id==0{
+                    fall_col[now % 8] = Int(now/8)
+                    filled=false
+                    break
+                }
+                now -= 8
+            }
+            if filled{
+                fall_col[i%8] = -1
+            }
         }
     }
     func connectAndFall(){
@@ -124,8 +136,6 @@ class game_variable: ObservableObject{
                 connectAndFall()
             }
             
-        }else{
-            print("DDD")
         }
     }
 //    func random_assign(){
