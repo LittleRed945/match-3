@@ -15,6 +15,9 @@
 		57D64B442818F3CC0099E696 /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D64B432818F3CC0099E696 /* GameTimer.swift */; };
 		57D64B472818F42C0099E696 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D64B462818F42B0099E696 /* TimerView.swift */; };
 		57D64B4A2818F66A0099E696 /* game_variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D64B492818F66A0099E696 /* game_variable.swift */; };
+		AA77FACA282B41DE00C4A5B7 /* battle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AA77FAC9282B41DD00C4A5B7 /* battle.mp3 */; };
+		AA77FACC282B425900C4A5B7 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AA77FACB282B425900C4A5B7 /* lose.mp3 */; };
+		AA77FAD0282B455A00C4A5B7 /* OverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77FACF282B455A00C4A5B7 /* OverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		57D64B432818F3CC0099E696 /* GameTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
 		57D64B462818F42B0099E696 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		57D64B492818F66A0099E696 /* game_variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game_variable.swift; sourceTree = "<group>"; };
+		AA77FAC9282B41DD00C4A5B7 /* battle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = battle.mp3; sourceTree = "<group>"; };
+		AA77FACB282B425900C4A5B7 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		AA77FACF282B455A00C4A5B7 /* OverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +68,14 @@
 			children = (
 				57D64B432818F3CC0099E696 /* GameTimer.swift */,
 				57D64B462818F42B0099E696 /* TimerView.swift */,
+				AA77FACF282B455A00C4A5B7 /* OverView.swift */,
 				57D64B332818F3AC0099E696 /* match_3App.swift */,
+				AA77FACB282B425900C4A5B7 /* lose.mp3 */,
 				57D64B352818F3AC0099E696 /* ContentView.swift */,
 				57D64B492818F66A0099E696 /* game_variable.swift */,
 				5755DE2128221B9E004F3DBA /* BoardView.swift */,
 				57D64B372818F3B50099E696 /* Assets.xcassets */,
+				AA77FAC9282B41DD00C4A5B7 /* battle.mp3 */,
 				57D64B3C2818F3B50099E696 /* Info.plist */,
 				57D64B392818F3B50099E696 /* Preview Content */,
 			);
@@ -139,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D64B3B2818F3B50099E696 /* Preview Assets.xcassets in Resources */,
+				AA77FACC282B425900C4A5B7 /* lose.mp3 in Resources */,
+				AA77FACA282B41DE00C4A5B7 /* battle.mp3 in Resources */,
 				57D64B382818F3B50099E696 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +166,7 @@
 				57D64B472818F42C0099E696 /* TimerView.swift in Sources */,
 				5755DE2228221B9E004F3DBA /* BoardView.swift in Sources */,
 				57D64B4A2818F66A0099E696 /* game_variable.swift in Sources */,
+				AA77FAD0282B455A00C4A5B7 /* OverView.swift in Sources */,
 				57D64B442818F3CC0099E696 /* GameTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

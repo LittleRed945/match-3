@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 struct TimerView: View {
-    @StateObject var gameTimer = GameTimer()
+    @ObservedObject var gameTimer :GameTimer
     var body: some View {
         ZStack{
             Rectangle().fill(Color.black).frame(width:
@@ -12,8 +12,18 @@ struct TimerView: View {
                                                     CGFloat(gameTimer.secondsElapsed), height: 20)
                 Spacer()
             }
-            
-            Text("\(gameTimer.secondsElapsed)")
+//            HStack{
+//                Image("heart(boarder)")
+//                    .padding(.trailing, 100.0)
+//            }
+            HStack{
+                Text("\(gameTimer.secondsElapsed)").background(Image("heart(boarder)").offset(x:-5,y:5))
+                Spacer()
+                
+            }
+
+                
+                
             
         }.onAppear(){gameTimer.start()}
         .padding(.trailing, 200.0)
